@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        body {
+        margin: 0px;
+        padding: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgb(45, 45, 46);
+        color: white;
+        }
+
+        .nav-bar {
+            width: 100%;
+            /* height: 8vh; */
+            display: flex;
+            border-bottom: 5px solid black;
+        }
+
+        .nav-first-half {
+            width: 50%;
+            color: white;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            font-size: .8rem;
+            padding-left: 2.5rem;
+        }
+
+        .nav-first-half span {
+            color: rgb(54, 56, 228);
+        }
+
+        .nav-sec-half {
+            width: 50%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .nav-sec-half a {
+            text-decoration: none;
+            color: white;
+            font-size: .9rem;
+        }
+    
+        section {
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .all-mem {
+            width: 100%;
+            height: 70%;
+            display: flex;
+            justify-content: space-evenly;
+            padding-bottom: 1.5rem;
+        }
+
+        .member {
+            width: 90%;
+            height: 70%;
+            /* height: 15rem; */
+            /* height: 100%; */
+        }
+
+        .member-info {
+            height: 30%;
+            font-size: .8rem;
+            text-align: center;
+        }
+
+        .member1 {
+            background-image: url(images/author1.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .member2 {
+            background-image: url(images/author2.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .member3 {
+            background-image: url(images/author3.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .our-team {
+            box-shadow: 0 0.125rem 0.3rem rgba(0,0,0,0.9);
+            width: 80%;
+            height: 27rem;
+            margin: 0 auto;
+            margin-bottom: 1rem;
+            margin-top: 1rem;
+        }
+
+        .our-team h3 {
+            padding: 1rem;
+        }
+
+        .team {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            width: 25%;
+            /* height: 70%; */
+            box-shadow: 0 0.125rem 0.3rem rgba(0,0,0,0.9);
+        }
+
+        .foot-area {
+            width: 100%;
+            height: 15vh;
+            border-top: 0.3rem solid black;
+        }
+
+        .foot-area {
+            width: 100%;
+            /* height: 15vh; */
+            border-top: 0.3rem solid black;
+            color: white;
+            text-align: center;
+        }
+
+        @media (max-width: 675px) {
+
+        .nav-bar {
+            flex-direction: column;
+            text-align: center;
+            height: 16rem;
+        }
+
+        .nav-first-half {
+            width: 100%;
+            flex-direction: column;
+            padding: 0;
+        }
+
+        .nav-sec-half {
+            width: 100%;
+            flex-direction: column;
+            justify-content: center;
+        }
+            .all-mem {
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                height: 55rem;
+                gap: 2rem
+            }
+            .team {
+                width: 70%;
+                height: 70%;
+                box-shadow: 0 0.125rem 0.3rem rgba(0,0,0,0.9);
+            }
+
+            .our-team {
+                height: 62rem;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+            <div class="nav-first-half"><h1><span>SKILL</span>ROLL</h1></div>
+            <div class="nav-sec-half">
+                <a href="index.html"><p>HOME</p></a>
+                <a href="courses.html"><p>COURSES</p></a>
+                <a href="#"><p>ABOUT US</p></a>
+                <a href="contact.html"><p>CONTACT US</p></a>
+            </div>
+        </div>
+    </header>
+    <section>
+        <h2>About Us</h2>
+        <p>Welcome to <b>Course Registration System</b> - your trusted platform for learning.
+        We beleive that education should be <b>affordable, accessible, and effective</b> Our platform helps students
+        and professionals register for courses that boost skills and careers.</p>
+
+        <h3>Our Mission</h3>
+        <p>To make learning easy and flexible for everyone.</p>
+        
+        <h3>Our Vission</h3>
+        <p>To become a leading platform where millions of learners accross the world can upgrade their knowledge and acheive their dreams.</p>
+        
+        <div class="our-team">
+            <h3 style="text-align: center;">Out team</h3>
+            <div class="all-mem">
+                <div class="team">
+                    <div class="member member1">
+                    </div>
+                    <div class="member-info">
+                        <h4>Nancy</h4>
+                        <p>Founder & CEO</p>
+                    </div>
+                    
+                </div>
+                <div class="team">
+                    <div class="member member2">
+                    </div>
+                    <div class="member-info">
+                        <h4>Guen</h4>
+                        <p>Lead Instructor</p>
+                    </div>
+                    
+                </div>
+                <div class="team">
+                    <div class="member member3">
+                    </div>
+                    <div class="member-info">
+                        <h4>Ben Stone</h4>
+                        <p>Student Support</p>
+                    </div>
+                    
+                </div>
+            </div>   
+        </div>     
+    </section>
+
+    <footer>
+            <div class="foot-area">
+                <p>&copy; 2025 Course Registration System</p>
+                <p>All rights reserved</p>
+            </div>   
+    </footer>
+</body>
+</html>
